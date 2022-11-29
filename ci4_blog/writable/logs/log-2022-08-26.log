@@ -1,0 +1,11 @@
+CRITICAL - 2022-08-26 16:24:41 --> Undefined index: HTTP_REFERER
+in APPPATH\Views\pages\public\post.php on line 29.
+ 1 APPPATH\Views\pages\public\post.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: HTTP_REFERER', 'APPPATH\\Views\\pages\\public\\post.php', 29, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\public\\post.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/public/post', [], true)
+ 5 APPPATH\Controllers\Blog.php(96): view('pages/public/post', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->view('23')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
